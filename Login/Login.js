@@ -1,4 +1,3 @@
-// console.log(users);
 var loginClient = document.getElementById('loginClient');
 loginClient.addEventListener('click',function () {
     let userName=document.getElementById('userName').value;
@@ -6,6 +5,7 @@ loginClient.addEventListener('click',function () {
     let status= User.login(userName,password,'client');
     if(status=="SUCCESS"){
         console.log(status);
+        console.log('zzz');
         location.assign('client/index.html')
     }
     else{
